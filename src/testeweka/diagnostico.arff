@@ -1,0 +1,44 @@
+@relation diagnostico
+
+@attribute sintomas {dor_de_garganta, cansaco, diarreia, tosse_seca, falta_de_ar}
+@attribute sentiu {sim, nao} 
+@attribute dias {1-6, 7-14}
+@attribute febre {sim, nao}
+@attribute temp_febre {sf, 36, >=37}
+@attribute possui_o_virus {sim, nao}
+
+@data
+dor_de_garganta, sim, 1-6, sim, 36, nao  
+dor_de_garganta, sim, 1-6, sim, >=37, nao
+dor_de_garganta, sim, 1-6, nao, sf, nao
+dor_de_garganta, sim, 7-14, sim, 36, sim 
+dor_de_garganta, sim, 7-14, sim, >=37, sim
+dor_de_garganta, sim, 7-14, nao, sf, nao 
+
+cansaco, sim, 1-6, sim, 36, nao  
+cansaco, sim, 1-6, sim, >=37, nao
+cansaco, sim, 1-6, nao, sf, nao
+cansaco, sim, 7-14, sim, 36, sim 
+cansaco, sim, 7-14, sim, >=37, sim
+cansaco, sim, 7-14, nao, sf, nao 
+
+diarreia, sim, 1-6, sim, 36, nao  
+diarreia, sim, 1-6, sim, >=37, nao
+diarreia, sim, 1-6, nao, sf, nao
+diarreia, sim, 7-14, sim, 36, sim 
+diarreia, sim, 7-14, sim, >=37, sim
+diarreia, sim, 7-14, nao, sf, nao 
+
+tosse_seca, sim, 1-6, sim, 36, nao  
+tosse_seca, sim, 1-6, sim, >=37, nao
+tosse_seca, sim, 1-6, nao, sf, nao
+tosse_seca, sim, 7-14, sim, 36, sim 
+tosse_seca, sim, 7-14, sim, >=37, sim
+tosse_seca, sim, 7-14, nao, sf, nao 
+
+falta_de_ar, sim, 1-6, sim, 36, nao  
+falta_de_ar, sim, 1-6, sim, >=37, nao
+falta_de_ar, sim, 1-6, nao, sf, nao
+falta_de_ar, sim, 7-14, sim, 36, sim 
+falta_de_ar, sim, 7-14, sim, >=37, sim
+falta_de_ar, sim, 7-14, nao, sf, nao 
